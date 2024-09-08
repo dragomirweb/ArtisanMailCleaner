@@ -97,15 +97,25 @@ button:SetScript("OnClick", processAllMails)
 button:GetFontString():SetPoint("LEFT", 10, 0)
 button:GetFontString():SetPoint("RIGHT", -10, 0)
 
+-- Function to update button state
+local function updateButtonState()
+    local numItems = GetInboxNumItems()
+    button:SetEnabled(numItems > 0)
+end
+
 -- Register events
 addon.frame:RegisterEvent("MAIL_SHOW")
 addon.frame:RegisterEvent("MAIL_CLOSED")
+addon.frame:RegisterEvent("MAIL_INBOX_UPDATE")
 addon.frame:SetScript("OnEvent", function(self, event)
     if event == "MAIL_SHOW" then
         button:Show()
+        updateButtonState()
     elseif event == "MAIL_CLOSED" then
         StaticPopup_Hide("ARTISAN_MAIL_MANAGER_CONFIRM")
         print("Mail frame closed. Stopping mail processing.")
+    elseif event == "MAIL_INBOX_UPDATE" then
+        updateButtonState()
     end
 end)
 
