@@ -34,12 +34,3 @@ The addon is built with Lua and uses the World of Warcraft API. Key functions in
 
 ## Considerations
 This addon is designed with Blizzard's Terms of Service and addon policies in mind. It requires user interaction to function and includes safeguards against excessive automation.
-
-## Version
-Current version: 1.0
-
-## Author
-Your Name
-
-## License
-[Include your chosen license here]

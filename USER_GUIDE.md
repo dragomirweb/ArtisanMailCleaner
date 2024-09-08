@@ -47,8 +47,3 @@ If you encounter any issues:
 1. Ensure the addon is up to date
 2. Try disabling other addons to check for conflicts
 3. If problems persist, please report the issue to the addon author
-
-## Support
-For additional help or to report bugs, please contact [Your preferred contact method or support channel].
-
-Remember to always use addons responsibly and in accordance with Blizzard's Terms of Service.
