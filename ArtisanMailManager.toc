@@ -1,0 +1,9 @@
+## Interface: 100105
+## Title: Artisan Mail Manager
+## Notes: Manages emails from the Artisan's Consortium
+## Author: Your Name
+## Version: 1.0
+## SavedVariables: ArtisanMailManagerDB
+## X-Category: Mail
+
+ArtisanMailManager.lua
